@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ML Meta Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1>ML META GUIDE</h1>
+  <div>
+    <select id="laneFilter">
+      <option value="all">All Role</option>
+      <option value="jungle">Jungle</option>
+      <option value="gold">Gold</option>
+      <option value="exp">EXP</option>
+      <option value="mid">Mid</option>
+      <option value="roam">Roam</option>
+    </select>
+    <button id="themeToggle">🌙</button>
+  </div>
+</nav>
+
+<section class="home">
+  <h2>Naik Rank Bukan Soal Mekanik Saja</h2>
+  <p>
+    Setiap role di Mobile Legends punya hero META masing-masing.
+    Klik hero untuk melihat kelebihan, kekurangan, counter,
+    dan rekomendasi item terbaiknya
+    memahami META adalah kunci kemenangan.
+    Website ini menyajikan hero terbaik di setiap role,
+    lengkap dengan kelebihan, kekurangan, counter,
+    serta rekomendasi item agar pick kamu lebih optimal. 
+  </p>
+</section>
+
+<section class="container">
+
+  <!-- JUNGLE -->
+  <div class="role" data-role="jungle">
+    <h3>🗡️ Jungle</h3>
+    <div class="hero-grid">
+      <div class="hero-card" onclick="openModal(
+        'Ling',
+        'Mobilitas tinggi dan late game mematikan',
+        'Lemah early dan butuh mekanik tinggi',
+        'Khufra, Saber',
+        ['tg','bf','hasclaw','endl','pistol','bod']
+      )">
+        <img src="hero/ling.jpg">
+        <h4>Ling</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Fredrinn',
+        'Sustain tebal dan kuat teamfight',
+        'Mobilitas rendah',
+        'Karrie, Valir',
+        ['tg','bfb','orakel','ra','qw','cp']
+      )">
+        <img src="hero/sambo2.jpg">
+        <h4>Fredrinn</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- GOLD -->
+  <div class="role" data-role="gold">
+    <h3>💰 Gold Lane</h3>
+    <div class="hero-grid">
+      <div class="hero-card" onclick="openModal(
+        'Claude',
+        'Lincah dan damage AoE besar',
+        'Butuh item core',
+        'Phoveus, Saber',
+        ['tg','dhs','golden','coro','won','mg']
+      )">
+        <img src="hero/clode.jpg">
+        <h4>Claude</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Brody',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['boh','tg','mg','rgm','sh','bod']
+      )">
+        <img src="hero/ireng.jpg">
+        <h4>Brody</h4>
+      </div>
+      
+      <div class="hero-card" onclick="openModal(
+        'Karrie',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['tg','coro','golden','dhs','mg','won']
+      )">
+        <img src="hero/kari.jpg">
+        <h4>Karrie</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Melissa',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['tg','wintaker','hasclaw','bf','mg','won']
+      )">
+        <img src="hero/melis.jpg">
+        <h4>Melissa</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Beatrix',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['bod','sb','mg','sh','won','rgm']
+      )">
+        <img src="hero/batrix.jpg">
+        <h4>Beatrix</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Granger',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['hs','rb','sp','pistol','imo','bod']
+      )">
+        <img src="hero/gr.jpg">
+        <h4>Granger</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Obsidia',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['tg','wintaker','hasclaw','sp','bf','mg']
+      )">
+        <img src="hero/obsi.jpg">
+        <h4>Obsidia</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Ixia',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['sh','coro','sp','tg','mg','rgm']
+      )">
+        <img src="hero/ixi.jpg">
+        <h4>Ixia</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Irithel',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['wintaker','hasclaw','tg','bf','mg','won']
+      )">
+        <img src="hero/itil.jpg">
+        <h4>Irithel</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Natan',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['ab','foh','ce','wintaker','dg','hc']
+      )">
+        <img src="hero/natan.jpg">
+        <h4>Natan</h4>
+      </div>
+      
+      <div class="hero-card" onclick="openModal(
+        'Moskov',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['coro','tg','golden','dhs','mg','sh']
+      )">
+        <img src="hero/moskov.jpg">
+        <h4>Moskov</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Bruno',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['tg','hasclaw','mg','bf','wintaker','sh']
+      )">
+        <img src="hero/madun.jpg">
+        <h4>Bruno</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Wanwan',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['coro','wintaker','hasclaw','bf','mg','rgm']
+      )">
+        <img src="hero/ww.jpg">
+        <h4>Wanwan</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Clint',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['wb','endl','sp','bod','mg','sh']
+      )">
+        <img src="hero/clint.jpg">
+        <h4>Clint</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Popol & Kupa',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['rb','sh','wintaker','bod','mg','rgm']
+      )">
+        <img src="hero/popol.jpg">
+        <h4>Popol & Kupa</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Miya',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['wintaker','hasclaw','sb','bf','mg','dhs']
+      )">
+        <img src="hero/miya.jpg">
+        <h4>Miya</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Layla',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['wb','wintaker','bf','hasclaw','mg','sh']
+      )">
+        <img src="hero/layla.jpg">
+        <h4>Layla</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Hanabi',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['coro','sb','dhs','golden','mg','rgm']
+      )">
+        <img src="hero/hanabi.jpg">
+        <h4>Hanabi</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Harith',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['ms','sabit','foh','hc','bw','dg']
+      )">
+        <img src="hero/harit.jpg">
+        <h4>Harith</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Kimmy',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['ab','gw','foh','wl','bw','hc']
+      )">
+        <img src="hero/kimy.jpg">
+        <h4>Kimmy</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Lesley',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['hs','rb','sp','pistol','imo','bod']
+      )">
+        <img src="hero/lesley.jpg">
+        <h4>Lesley</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Roger',
+        'Damage besar sejak early',
+        'Attack speed lambat',
+        'Lolita',
+        ['hs','rb','sp','pistol','imo','bod']
+      )">
+        <img src="hero/auu.jpg">
+        <h4>Roger</h4>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EXP -->
+  <div class="role" data-role="exp">
+    <h3>🛡️ EXP Lane</h3>
+    <div class="hero-grid">
+      <div class="hero-card" onclick="openModal(
+        'Yu Zhong',
+        'Sustain kuat dan zoning bagus',
+        'Rentan kaiting',
+        'Esmeralda',
+        ['tg','hs','warex','qw','orakel','imo']
+      )">
+        <img src="hero/yz.jpg">
+        <h4>Yu Zhong</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Arlott',
+        'Burst cepat dan anti CC',
+        'Bergantung skill',
+        'Ruby',
+        ['sh','rb','sp','pistol','boh','imo']
+      )">
+        <img src="hero/arlot.jpg">
+        <h4>Arlott</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- MID -->
+  <div class="role" data-role="mid">
+    <h3>🔮 Mid Lane</h3>
+    <div class="hero-grid">
+      <div class="hero-card" onclick="openModal(
+        'Valentina',
+        'Fleksibel dan bisa curi ulti',
+        'Butuh positioning',
+        'Lylia',
+        ['ms','buku','lt','bw','dg','hc']
+      )">
+        <img src="hero/valentina.jpg">
+        <h4>Valentina</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Xavier',
+        'Damage jarak jauh besar',
+        'Minim escape',
+        'Ling',
+        ['ab','gw','lt','wl','dg','bw']
+      )">
+        <img src="hero/xavier.jpg">
+        <h4>Xavier</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROAM -->
+  <div class="role" data-role="roam">
+    <h3>🧭 Roam</h3>
+    <div class="hero-grid">
+      <div class="hero-card" onclick="openModal(
+        'Minotaur',
+        'Heal dan CC lengkap',
+        'Bergantung ulti',
+        'Valir',
+        ['foto','orakel','ms','domi','cp','gh']
+      )">
+        <img src="hero/minotaur.jpg">
+        <h4>Minotaur</h4>
+      </div>
+
+      <div class="hero-card" onclick="openModal(
+        'Khufra',
+        'Counter hero lincah',
+        'Timing skill krusial',
+        'Diggie',
+        ['rb','tb','domi','ch','ac','atena']
+      )">
+        <img src="hero/khufra.jpg">
+        <h4>Khufra</h4>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="heroName"></h2>
+    <p><b>Kelebihan:</b> <span id="heroPlus"></span></p>
+    <p><b>Kekurangan:</b> <span id="heroMinus"></span></p>
+    <p><b>Counter:</b> <span id="heroCounter"></span></p>
+    <div class="item-row" id="heroItem"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  © 2026 Tutor Emel Kids
+  <br>
+  Mikir Kids
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
